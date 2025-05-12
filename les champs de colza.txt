@@ -1,0 +1,56 @@
+{
+    "Search": {
+        "searchDate": "2025-04-18 12:35:30",
+        "queryChoice": "les champs de colza",
+        "videoAmount": 5,
+        "videoDuration": "short",
+        "orderBy": "relevance"
+    },
+    "Videos": {
+        "1": {
+            "query": "les champs de colza",
+            "videoId": "d3-b0wy7a64",
+            "videoName": "Les champs de Colza | DJI Mavic Pro",
+            "channelId": "UC-qZaeH2brO6znQWmm4-dXA",
+            "channelName": "BH",
+            "description": "",
+            "duration": "PT1M40S"
+        },
+        "2": {
+            "query": "les champs de colza",
+            "videoId": "bDQSYCau-LM",
+            "videoName": "Champ de colza en Beauce Drone 4K Mai 2022",
+            "channelId": "UCx_r1VDHmhaOwMmNdzEpJBw",
+            "channelName": "Fabrice Desmerger",
+            "description": "Montage Davinci Resolve 17.",
+            "duration": "PT1M23S"
+        },
+        "3": {
+            "query": "les champs de colza",
+            "videoId": "4z5YpPA2KXk",
+            "videoName": "LES CHAMPS DE COLZA À STRASBOURG VUE DU DRONE 🇨🇵🇨🇵💙",
+            "channelId": "UCoKfdSyQyBTiaAYAd_Rzdig",
+            "channelName": "L'enfant des îles",
+            "description": "strasbourg #alsace #shortvideo #dronevideo#drone #music.",
+            "duration": "PT2M37S"
+        },
+        "4": {
+            "query": "les champs de colza",
+            "videoId": "koB6gO0bu3A",
+            "videoName": "Champs de colza",
+            "channelId": "UCe9RLsMEsrrgdcfsHVnnLCA",
+            "channelName": "Monique DEPORTE",
+            "description": "Les champs en Normandie se couvrent de fleurs de colza jaunes faisant penser au soleil.",
+            "duration": "PT32S"
+        },
+        "5": {
+            "query": "les champs de colza",
+            "videoId": "cg1jEb4_12c",
+            "videoName": "Paroles de Terres : Emmanuel - Episode 4 - La floraison du Colza",
+            "channelId": "UCsvWRa4j6nsCas02_pl3mlw",
+            "channelName": "Terres OléoPro",
+            "description": "NOUVELLE RECETTE ! https://bit.ly/2V1bszP PULS' : Cuisinez, jouez, gagnez ! https://www.terresoleopro.com/puls Dans cet ...",
+            "duration": "PT1M54S"
+        }
+    }
+}

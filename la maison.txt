@@ -1,0 +1,56 @@
+{
+    "Search": {
+        "searchDate": "2025-04-18 01:19:03",
+        "queryChoice": "la maison",
+        "videoAmount": 5,
+        "videoDuration": "short",
+        "orderBy": "relevance"
+    },
+    "Videos": {
+        "1": {
+            "query": "la maison",
+            "videoId": "RnJ_HEM1CB4",
+            "videoName": "La Maison — Official Trailer | Apple TV+",
+            "channelId": "UC1Myj674wRVXB9I4c6Hm5zA",
+            "channelName": "Apple TV",
+            "description": "Haute couture meets high drama as rival families battle for control of a fashion empire. La Maison is now streaming on Apple TV+ ...",
+            "duration": "PT2M30S"
+        },
+        "2": {
+            "query": "la maison",
+            "videoId": "ZSw77M7rorY",
+            "videoName": "La Maison — Bande-annonce officielle | Apple TV+",
+            "channelId": "UCh5CL7XbLPZPfJa7Bf6ifng",
+            "channelName": "Apple France",
+            "description": "La haute couture côtoie le drame lorsque deux familles rivales se disputent le contrôle d'un empire de la mode. La Maison débute ...",
+            "duration": "PT2M33S"
+        },
+        "3": {
+            "query": "la maison",
+            "videoId": "OS40JObvjSo",
+            "videoName": "Vocabulaire: La maison (pièces et étages)",
+            "channelId": "UCj3FlQ6x_r_lSoJR7UFp0MQ",
+            "channelName": "Maprofde FLE",
+            "description": "Vocabulaire: La maison (pièces et étages) Ceci est une version modifiée de la vidéo existante pour laisser plus de place au texte.",
+            "duration": "PT1M57S"
+        },
+        "4": {
+            "query": "la maison",
+            "videoId": "4V2srYL1VC0",
+            "videoName": "Apprendre le vocabulaire de la maison",
+            "channelId": "UC8I-UIlXPNS4luC4iV7dRdQ",
+            "channelName": "Titounis - Comptine bébé - Chanson enfant",
+            "description": "http://www.mondedestitounis.fr Comment apprendre les différentes pièces de la maison en français à vos enfants ? Grâce à cette ...",
+            "duration": "PT2M50S"
+        },
+        "5": {
+            "query": "la maison",
+            "videoId": "n0Aal9g9cLQ",
+            "videoName": "La Maison — An Inside Look | Apple TV+",
+            "channelId": "UC1Myj674wRVXB9I4c6Hm5zA",
+            "channelName": "Apple TV",
+            "description": "An inside look at how 17 seconds can destroy a 100-year-old legacy. La Maison is now streaming on Apple TV+ ...",
+            "duration": "PT2M35S"
+        }
+    }
+}

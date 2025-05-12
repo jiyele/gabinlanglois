@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Audio incrusté dans le texte</title>
+  <style>
+
+    body {
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .text-wrapper {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .centered-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;     
+      height: 35vh;          
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+      position: absolute;
+      bottom: 10px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between; /* Espace entre les deux boutons */
+      width: 100%;
+      padding: 10px;
+    }
+
+    .suivant-bouton, .precedent-bouton {
+      position: absolute;
+      bottom: 20px; /* Distance par rapport au bas de l'écran */
+      padding: 10px 20px;
+      background-color: #ffffff; /* Couleur de fond */
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .suivant-bouton {
+      right: 20px; /* Positionner à droite */
+    }
+
+    .precedent-bouton {
+      left: 20px; /* Positionner à gauche */
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="text-wrapper">
+        <div class="centered-page"></div>
+
+    <p>
+        le <i>parti pris des choses</i> premier du nom est une oeuvre littéraire poétique écrite par
+        Francis Ponge, un écrivain français que j'apprécie.
+        le <i>parti pris des choses</i>, second, est le nom que j'ai donné à l'interprétation par YouTube
+        des mots, et donc des choses. Comme tout peut être objet, chaque définition est interprétée
+        par YouTube qui en fait le produit de son service, mon script python travaille ce produit et
+        voilà une chose née. Son parti pris, réinterprété, sonorement.
+    </p>
+    <img src="francis_ponge.jpg" alt="Photo" width="300">
+</div>
+
+<a href="gabinlanglois.html" class="precedent-bouton">← accueil</a>

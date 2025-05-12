@@ -1,0 +1,57 @@
+{
+    
+    "Search": {
+        "searchDate": "2025-04-18 00:36:55",
+        "queryChoice": "le gazon",
+        "videoAmount": 5,
+        "videoDuration": "short",
+        "orderBy": "relevance"
+    },
+    "Videos": {
+        "1": {
+            "query": "le gazon",
+            "videoId": "wpkO6v420X0",
+            "videoName": "Choisir son gazon",
+            "channelId": "UCJJyXHiKEiQLf6HLIP6RTKw",
+            "channelName": "Rustica",
+            "description": "Prêt à semer votre gazon ? Variété, qualité, quantité : Hubert le jardinier vous livre ses conseils pour choisir vos graines de gazon.",
+            "duration": "PT2M41S"
+        },
+        "2": {
+            "query": "le gazon",
+            "videoId": "07PZQ_PmXgQ",
+            "videoName": "LE GAZON : Comment réussir l&#39;entretien de sa PELOUSE ?",
+            "channelId": "UCyvdtQG0JpvKXkPK7_cZMGQ",
+            "channelName": "Pierre le cultivateur",
+            "description": "Pour réussir l'entretien de sa pelouse afin de regarnir son gazon, il y a plusieurs étapes à respecter ! La première étape consiste ...",
+            "duration": "PT3M47S"
+        },
+        "3": {
+            "query": "le gazon",
+            "videoId": "n62dzLn27p4",
+            "videoName": "Comment poser du gazon naturel en rouleau ? - Truffaut",
+            "channelId": "UCVuUAN2z1tCH9yJiF1UbgoA",
+            "channelName": "TRUFFAUT",
+            "description": "Pour poser du gazon en rouleau et obtenir un résultat instantané suivez les conseils de nos jardiniers : la pose du gazon en ...",
+            "duration": "PT3M6S"
+        },
+        "4": {
+            "query": "le gazon",
+            "videoId": "zJmC_1wXTLE",
+            "videoName": "Comment semer LE GAZON ? (sans rouleau)",
+            "channelId": "UCvO-BwnUWFrd21f-7-uk2ew",
+            "channelName": "Le potager de montagne",
+            "description": "Bonjour à tous dans cette vidéo je vous montre comment semer du gazon très simplement, ma terre est assez lourde (argile) mais ...",
+            "duration": "PT1M39S"
+        },
+        "5": {
+            "query": "le gazon",
+            "videoId": "3swdPO-LpNc",
+            "videoName": "Décor Discount : le gazon synthétique c&#39;est du choix, de la qualité et du stock",
+            "channelId": "UClHaeDuLAu6QjwbKAq6t43g",
+            "channelName": "Decor Discount",
+            "description": "",
+            "duration": "PT41S"
+        }
+    }
+}

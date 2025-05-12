@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site internet de Gabin Langlois</title>
+  <style>
+
+    .background-text {
+      text-align: justify;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1 0px;
+      color: rgba(0, 0, 0, 0.44);
+      white-space: nowrap;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+      font-weight: bold;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      font-family: 'Times New Roman';
+      text-align: center;
+    }
+
+    h1 {
+      color: rgb(0, 0, 0);
+    }
+
+    marquee {
+      font-size: 24px;
+      color: rgb(0, 0, 0);
+    }
+
+    a {
+      display: block;
+      margin: 10px;
+      font-size: 18px;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .lastfm-widget {
+      border: 2px solid #ccc;
+      max-width: 300px;
+      background-color: #f9f9f9;
+      font-family: 'Times New Roman';
+    }
+
+    .lastfm-title {
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    #lastfm .track {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      font-family: sans-serif;
+    }
+
+    #lastfm img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    #lastfm .info a {
+      text-decoration: none;
+      color: black;
+      font-family: 'Times New Roman';
+    }
+
+    .text-wrapper {
+      position: left;
+      max-width: 800px;
+      margin: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>bienvenue</h1>
+
+  <div class="lastfm-widget">
+    <p class="lastfm-title">j'écoute/ou dernière chanson que j'ai écouté :</p>
+    <div id="lastfm"></div>
+  </div>  
+
+  <div id="lastfm"></div>
+
+  <script>
+    const LASTFM_USERNAME = 'jiye_el';
+    const LASTFM_API_KEY = '0efb7ce72de34419a9e3df1f09cf9e1b';
+  
+    async function fetchLastPlayedTrack(username, apiKey) {
+      const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`;
+      const response = await fetch(url);
+      const data = await response.json();
+      return data.recenttracks.track[0];
+    }
+  
+    function updateNowPlaying(track) {
+      const container = document.getElementById('lastfm');
+  
+      const artist = track.artist['#text'];
+      const name = track.name;
+      const url = track.url;
+      const image = track.image.pop()['#text'];
+  
+      container.innerHTML = `
+        <div class="track">
+          <img src="${image}" alt="${name}" />
+          <div class="info">
+            <a href="${url}" target="_blank">
+              ${artist} – ${name}
+            </a>
+          </div>
+        </div>
+      `;
+    }
+  
+    async function main() {
+      const track = await fetchLastPlayedTrack(LASTFM_USERNAME, LASTFM_API_KEY);
+      updateNowPlaying(track);
+    }
+  
+    main();
+  </script>
+
+  <marquee>site internet de gabin langlois</marquee>
+
+  <!-- Image -->
+  <img src="IMG_9370.jpeg" alt="Photo" width="300">
+
+  <!-- Liens vers d'autres pages -->
+  <a href="le gazon.html">le parti pris des choses</a>
+
+  <a href="partiprisscriptpage.html">le parti pris des choses +script+</a>
+
+  <a href="partipriscomprehensionfarfouillage.html">le parti pris des choses +farfouillage+</a>
+
+  <!-- Image -->
+  <img src="bowling.gif" alt="Photo" width="300">
+
+</body>
+</html>

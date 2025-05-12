@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Audio incrusté dans le texte</title>
+  <style>
+    
+    .background-text {
+      text-align: justify;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      color: rgba(0, 0, 0, 0.44);
+      white-space: nowrap;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+      font-weight: bold;
+    }
+
+    body {
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header, footer {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+      background: rgb(255, 255, 255);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #000000;
+      margin-top: 0;
+    }
+
+    .photo {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
+
+    .photo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #ffffff;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+      position: absolute; /* Fixe les boutons */
+      bottom: 10px; /* Positionne les boutons en bas */
+    }
+
+
+    header, footer {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+      background: rgb(255, 255, 255);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #000000;
+      margin-top: 0;
+    }
+
+    .photo {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
+
+    .photo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #ffffff;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between; /* Espace entre les deux boutons */
+      width: 100%;
+      padding: 10px;
+    }
+
+    .suivant-bouton, .precedent-bouton {
+      position: absolute;
+      bottom: 20px; /* Distance par rapport au bas de l'écran */
+      padding: 10px 20px;
+      background-color: #ffffff; /* Couleur de fond */
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .suivant-bouton {
+      right: 20px; /* Positionner à droite */
+    }
+
+    .precedent-bouton {
+      left: 20px; /* Positionner à gauche */
+    }
+
+    footer {
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .text-wrapper {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .audio-player {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      z-index: 1;
+    }
+
+    audio {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-text">
+    <pre id="bg-text"></pre>
+  </div>
+
+  <header>
+    <p>gabin langlois</p>
+  </header>
+
+  <div class="container">
+    <h1>les champs de colza</h1>
+    <h2>6 minutes, 44 secondes</h2>
+
+  <div class="text-wrapper">
+    <div class="audio-shape"></div>
+
+    <p>
+      les champs de colza sont universels. le vent ne les transforme pas et ils semblent bel et bien
+      immobiles dans leur attachement à la terre. ils ne s'inscrivent qu'à un moment précis dans notre
+      perception. nous ne les voyons qu'en masse profonde, étendue. étendue jaune dont on sait deviner
+      les pieds verts. les pieds verts qui nous relient à la route. oui ils nous apparaissent en voiture.
+      ils nous aparaissent en mouvement alors que eux ne bouegent pas d'un pouce. je vous l'assure.
+    </p>
+
+    <!-- Le vrai lecteur audio au milieu -->
+    <div class="audio-player">
+      <audio id="audio-player" controls>
+        <source src="les champs de colza_son.mp3" type="audio/mpeg">
+        Ton navigateur ne supporte pas l’audio.
+      </audio>
+    </div>
+  </div>
+
+  <footer>
+    gabin langlois
+  </footer>
+
+<a href="-" class="suivant-bouton">- →</a>
+
+<a href="la pensée.html" class="precedent-bouton">← la pensée</a>
+
+<script>
+  const audio = document.getElementById('audio-player');
+  const bgText = document.getElementById('bg-text');
+
+  let texte = '';
+  let index = 0;
+  let animationLancée = false;
+  let intervalID = null;
+
+  function revealNextChar() {
+    if (index < texte.length) {
+      bgText.textContent += texte[index];
+      index++;
+    } else {
+      clearInterval(intervalID);
+    }
+  }
+
+  audio.addEventListener('play', () => {
+    if (!animationLancée) {
+      fetch('les champs de colza.txt')
+        .then(response => response.text())
+        .then(data => {
+          texte = data;
+          animationLancée = true;
+          intervalID = setInterval(revealNextChar, 50);
+        });
+    } else {
+      intervalID = setInterval(revealNextChar, 50);
+    }
+  });
+
+  audio.addEventListener('pause', () => {
+    clearInterval(intervalID);
+  });
+
+  audio.addEventListener('ended', () => {
+    clearInterval(intervalID);
+  });
+</script>
+
+</body>
+</html>
