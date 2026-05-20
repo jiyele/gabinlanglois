@@ -1,0 +1,56 @@
+{
+    "Search": {
+        "searchDate": "2025-04-18 12:22:49",
+        "queryChoice": "la pensée",
+        "videoAmount": 5,
+        "videoDuration": "short",
+        "orderBy": "relevance"
+    },
+    "Videos": {
+        "1": {
+            "query": "la pensée",
+            "videoId": "WMWwu3EJ2BY",
+            "videoName": "Pourquoi la &quot;pensée positive&quot; peut courir à ta perte",
+            "channelId": "UCBH_pTiinRcmvz0bjnege-Q",
+            "channelName": "David Laroche FR",
+            "description": "Nous demander d'être QUE positif, c'est quelque part nous demander d'être tout sauf des êtres humains... Alors même que la vie ...",
+            "duration": "PT1M"
+        },
+        "2": {
+            "query": "la pensée",
+            "videoId": "HQj-7TSg560",
+            "videoName": "Écrire par la pensée est désormais possible",
+            "channelId": "UCO6K_kkdP-lnSCiO3tPx7WA",
+            "channelName": "franceinfo",
+            "description": "Écrire par la pensée est désormais possible grâce à l'aide de l'intelligence artificielle. Des chercheurs de Meta, la maison mère ...",
+            "duration": "PT2M19S"
+        },
+        "3": {
+            "query": "la pensée",
+            "videoId": "rfQbu48s6lg",
+            "videoName": "Michel Onfray et la pensée unique",
+            "channelId": "UCm99kDM1zImBQnkfu0uy0ig",
+            "channelName": "Yatsac",
+            "description": "Combattre les Intolérances – Sciences PO – Débat avec Michel Onfray – 23/03/2015.",
+            "duration": "PT3M55S"
+        },
+        "4": {
+            "query": "la pensée",
+            "videoId": "B0FQ9K78JXo",
+            "videoName": "Le paradoxe de la pensée négative",
+            "channelId": "UCBH_pTiinRcmvz0bjnege-Q",
+            "channelName": "David Laroche FR",
+            "description": "Le paradoxe de la pensée négative.",
+            "duration": "PT59S"
+        },
+        "5": {
+            "query": "la pensée",
+            "videoId": "qNT5nJZYpm8",
+            "videoName": "La force de la pensée - Une bonne pensée se transforme en une bonne action",
+            "channelId": "UC6rTPZSFojGPjp9Ya44qN7g",
+            "channelName": "‎Rabbi David Pinto ",
+            "description": "",
+            "duration": "PT49S"
+        }
+    }
+}
